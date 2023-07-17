@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .text-container {
+        padding-bottom: 38px;
+        padding-top: 38px;
+      }
+
+      .image > img {
+        width: 90px;
+        height: 80px;
+        background-color: gray;
+        flex-shrink: 0;
+        margin-right: 20px;
+      }
+
+      .footer {
+        background-color: #dc3545;
+        color: white;
+        margin-top: auto; /* Mengatur margin atas footer menjadi otomatis agar tetap di bagian bawah */
+      }
+
+      .footer a {
+        text-decoration: none;
+        color: white;
+      }
+
+      h5 {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper vh-100">
+      <!-- Navbar -->
+      <nav
+        class="nav d-flex justify-content-between bg-black"
+        style="color: white"
+      >
+        <div class="nav-left d-flex ps-5 my-3 align-items-center">
+          <div class="navbar-brand">Logo</div>
+          <div class="navbar-brand">Abstract</div>
+          <div>|</div>
+          <div class="navbar-brand">Help Center</div>
+        </div>
+        <div class="nav-right d-flex pe-5 my-3">
+          <a href="" class="btn btn-dark btn-outline-light me-2 bo"
+            >Submit a reqest</a
+          >
+          <a href="" class="btn" style="background-color: #4c5fd5; color: white"
+            >Sign in</a
+          >
+        </div>
+      </nav>
+
+      <!-- search -->
+      <div class="container-fluid p-0">
+        <div
+          class="search d-flex flex-column justify-content-center align-items-center"
+          style="height: 350px; background-color: #dadbf1"
+        >
+          <h1 class="pb-4" style="font-size: 70px; font-weight: 370">
+            How can we help?
+          </h1>
+          <input
+            class="col-5 py-3 ps-2"
+            type="search"
+            placeholder="Search"
+            style="
+              border-radius: 5px;
+              border: none;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            "
+          />
+        </div>
+
+        <!-- content -->
+        <div
+          class="content d-flex justify-content-center p-0"
+          style="font-size: 1.7rem"
+        >
+          <div class="row-cols-1 py-5">
+            <div
+              class="row-cols-2 d-flex justify-content-center align-items-center"
+            >
+              <div class="d-flex text-container col-4">
+                <div
+                  class="image d-flex align-items-center justify-content-center"
+                  style="
+                    width: 90px;
+                    height: 80px;
+                    background-color: gray;
+                    flex-shrink: 0;
+                  "
+                >
+                  <img src="img/branch.jpg" class="" />
+                </div>
+
+                <div class="content-text">
+                  <h5>Branches</h5>
+                  <p>
+                    Abstract Branches lets you manage version, and document your
+                    design in one place.
+                  </p>
+                  <a href="">Learn More</a>
+                </div>
+              </div>
+
+              <div class="d-flex text-container col-4">
+                <div
+                  class="image d-flex align-items-center justify-content-center"
+                  style="
+                    width: 90px;
+                    height: 80px;
+                    background-color: gray;
+                    flex-shrink: 0;
+                  "
+                >
+                  <p>90X80</p>
+                </div>
+                <div class="content-text">
+                  <h5>Manage your accout</h5>
+                  <p>
+                    Configure your account settings, such as your email, profile
+                    details, and password
+                  </p>
+                  <a href="">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row-cols-2 d-flex justify-content-center">
+              <div class="d-flex text-container col-4">
+                <div
+                  class="image d-flex align-items-center justify-content-center"
+                  style="
+                    width: 90px;
+                    height: 80px;
+                    background-color: gray;
+                    flex-shrink: 0;
+                  "
+                >
+                  <img src="img/puzzle.png" class="" />
+                </div>
+                <div class="content-text">
+                  <h5>Manage organizations, teams, and projects</h5>
+                  <p>
+                    Use Abstract organizations, teams, and projects to organize
+                    your people and your work.
+                  </p>
+                  <a href="">Learn More</a>
+                </div>
+              </div>
+
+              <div class="d-flex text-container col-4">
+                <div
+                  class="image d-flex align-items-center justify-content-center"
+                  style="
+                    width: 90px;
+                    height: 80px;
+                    background-color: gray;
+                    flex-shrink: 0;
+                  "
+                >
+                  <p>90X80</p>
+                </div>
+                <div class="content-text">
+                  <h5>Manage billing</h5>
+                  <p>Change subcriptions and payment details</p>
+                  <a href="">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row-cols-2 d-flex justify-content-center">
+              <div class="d-flex text-container col-4">
+                <div
+                  class="image d-flex align-items-center justify-content-center"
+                  style="
+                    width: 90px;
+                    height: 80px;
+                    background-color: gray;
+                    flex-shrink: 0;
+                  "
+                >
+                  <p>90X80</p>
+                </div>
+                <div class="content-text">
+                  <h5>Authenticate to Abstract</h5>
+                  <p>
+                    Set up and configure SSQ, SCIM, and Just-in-Time
+                    provisioning
+                  </p>
+                  <a href="">Learn More</a>
+                </div>
+              </div>
+              <div class="d-flex text-container col-4">
+                <div
+                  class="image d-flex align-items-center justify-content-center"
+                  style="
+                    width: 90px;
+                    height: 80px;
+                    background-color: gray;
+                    flex-shrink: 0;
+                  "
+                >
+                  <p>90X80</p>
+                </div>
+                <div class="content-text">
+                  <h5>Abstract support</h5>
+                  <p>Get in touch with a human</p>
+                  <a href="">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer bg-black container-fluid" style="">
+        <div
+          class="container-fluid d-flex flex-wrap justify-content-around py-4"
+          style="min-height: 300px"
+        >
+          <div class="abstract">
+            <h4>Abstract</h4>
+            <a href="">Branches</a>
+          </div>
+          <div class="resources d-flex flex-column">
+            <h4>Resources</h4>
+            <a href="">Blog</a>
+            <a href="">Help Center</a>
+            <a href="">Release Notes</a>
+            <a href="">Status</a>
+          </div>
+          <div class="community d-flex flex-column">
+            <h4>Community</h4>
+            <a href="">Twitter</a>
+            <a href="">LinkedIn</a>
+            <a href="">Facebook</a>
+            <a href="">Dribbble</a>
+            <a href="">Podcast</a>
+          </div>
+          <div class="company d-flex flex-column">
+            <h4>Company</h4>
+            <a href="">About Us</a>
+            <a href="">Careers</a>
+            <a href="">Legal</a>
+            <h6 class="mt-2 m-0">Contact</h6>
+            <div class="contact-us m-0">info@abstract.com</div>
+          </div>
+          <div class="copyright d-flex flex-column justify-content-end me-0">
+            <a href="">Logo</a>
+            <div>@ Copyright 2022</div>
+            <div>Abstract Studio Design,Inc.</div>
+            <div>All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/bootstrap/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>
